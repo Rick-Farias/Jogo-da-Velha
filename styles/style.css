@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    text-align: center;
+    background: linear-gradient(to bottom right, #595B83, #333456) ;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    color: #D2D2D2;
+    margin: 10px;
+    font-size: 2.4rem;
+}
+.container{
+    background-color: #D2D2D2;
+    width: 316px;
+    height: 190px;
+    margin: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.playerInicial{
+    color: #333456;
+    font-size: 1.2rem;
+}
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: #D2D2D2;
+    margin: 2px;
+    display: inline-block;
+    
+}
+.o{
+    position: relative;
+}
+.o::after{
+    position: absolute;
+    content: "\1F600";
+    font-size: 60px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.x{
+    position: relative;
+}
+.x::after{
+    position: absolute;
+    content: "\1F621";
+    font-size: 60px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+#text{
+    color: #333456;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+.jogadores{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 60px;
+}
+.j1::after{
+    content: "\1F600";
+    font-size: 40px;
+    line-height: 100px;
+    margin-right: 40px;
+}
+
+.j2::after{
+    content: "\1F621";
+    font-size: 40px;
+    line-height: 100px;
+}
+#J2{
+    margin-left: 40px;
+}
+#iniciar{
+    margin-top: 10px;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.0rem;
+    color: #333456;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#reset{
+    margin-top: 10px;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.0rem;
+    color: #333456;
+}
+
+.container_1{
+    position: absolute;
+    left: 200px;
+}
+.container_2{
+width: 400px;
+height: 620px;
+position: absolute;
+right: 200px;
+}
+.painel{
+    background-color: #D2D2D2;
+    margin-top: 75px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.j1{
+    font-size: 1.8rem;
+    margin: 5px;
+}
+.j2{
+    font-size: 1.8rem;
+    margin: 5px;
+}
+.pontos{
+    width: 100%;
+    color: #333456;
+}

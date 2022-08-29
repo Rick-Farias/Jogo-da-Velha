@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Jogo da Velha</title>
+  </head>
+  <body>
+    
+
+    <div class="container_1">
+        <h1>JOGO DA VELHA</h1>
+        <div class="container">
+            <div>
+                <p class="playerInicial">Quem inicia o jogo?</p>
+              </div>
+        
+              <div class="jogadores">
+                    <input
+                        id="J1"
+                        type="checkbox"
+                        name="Jogador_1"
+                        value="0"
+                    />  
+                    <label for="Jogador_1"><div class="j1"></div></label> 
+                    <input 
+                        id="J2" 
+                        type="checkbox"
+                        name="Jogador_2"
+                        value="1"
+                    />
+                    <label for="Jogador_2"><div class="j2"></div></label>
+              </div>
+        
+              <div>
+                <button id="iniciar">INICIAR</button>
+                <button id="reset">REINICIAR</button>
+                <p id="text"></p>
+              </div>
+        </div>
+    
+          <div id="stage">
+            <div>
+              <div id="0" class="square"></div>
+              <div id="1" class="square"></div>
+              <div id="2" class="square"></div>
+            </div>
+            <div>
+              <div id="3" class="square"></div>
+              <div id="4" class="square"></div>
+              <div id="5" class="square"></div>
+            </div>
+            <div>
+              <div id="6" class="square"></div>
+              <div id="7" class="square"></div>
+              <div id="8" class="square"></div>
+            </div>
+          </div>
+    </div>
+
+      <div class="container_2">
+        <div class="painel">
+            <h2 class="pontos">PONTUAÇÃO</h2>
+            <div id="p1" class="j1">0</div>
+            <div id="p2" class="j2">0</div>
+        </div>
+      </div>
+
+
+    <script src="game.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
