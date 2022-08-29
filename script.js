@@ -25,8 +25,6 @@ function clicou (event) {
     }
     updateSquares();
 }
-let j1 = document.getElementById("J1");
-let j2 = document.getElementById("J2");
 
 function updateSquares(){
     let squares = document.querySelectorAll(".square");
@@ -34,15 +32,8 @@ function updateSquares(){
         let position = square.id;
         let simbolo = board[position];
 
-        if (simbolo != '' && j1.checked == true && j2.checked == false){
-            playerTime = j1.value;
-            text.innerHTML ="";
-            gameover =false;
+        if (simbolo != ''){
             square.innerHTML = `<div  class='${simbolo}' ></div>`
-        }else{
-            playerTime = j2.value;
-            text.innerHTML ="";
-            gameover =false;
         }
     })
 }
@@ -66,6 +57,8 @@ reset.addEventListener('click', ()=>{
     gameover =false;
     
 })
+let j1 = document.getElementById("J1");
+let j2 = document.getElementById("J2");
 
 let iniciar = document.getElementById("iniciar");
 iniciar.addEventListener('click', ()=>{
