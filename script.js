@@ -9,8 +9,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 function clicou (event) {
     let square = event.target;
     let position = square.id;
-    console.log(square)
-    console.log(position)
+
     if(movimento(position)){
         let text = document.getElementById("text");
         let p1 = document.getElementById("p1");
@@ -22,7 +21,7 @@ function clicou (event) {
             console.log("teste2")
             p2.innerHTML = 1 + parseInt(p2.innerHTML);
         }
-        text.innerHTML = "O jogo acabou!!"
+            text.innerHTML = "O jogo acabou!!"
     }
     updateSquares();
 }
@@ -56,6 +55,7 @@ reset.addEventListener('click', ()=>{
 
     board = ['', '', '','', '', '','', '', '']
     gameover =false;
+    
 })
 
 let j1 = document.getElementById("J1");
@@ -68,6 +68,8 @@ iniciar.addEventListener('click', ()=>{
 
         if(j1.checked == true && j2.checked == true){
             text.innerHTML ="Selecione apenas UM jogador";
+        }else if(j1.checked == false && j2.checked == false){
+            text.innerHTML ="Selecione UM jogador";
         }else if(j1.checked == true && j2.checked == false){
             playerTime = j1.value;
             text.innerHTML ="";
