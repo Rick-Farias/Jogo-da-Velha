@@ -67,10 +67,6 @@ reset.addEventListener('click', ()=>{
     
 })
 
-let j1 = document.getElementById("J1");
-let j2 = document.getElementById("J2");
-
-
 let iniciar = document.getElementById("iniciar");
 iniciar.addEventListener('click', ()=>{
     let text = document.getElementById("text");
